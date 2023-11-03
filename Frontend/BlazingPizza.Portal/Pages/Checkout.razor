@@ -1,0 +1,52 @@
+﻿@page "/checkout"
+
+@using BlazingPizza.API;
+@using BlazingPizza.Portal.Services;
+
+@inject OrderStateService OrderStateService
+@inject PricingService PricingService
+@inject NavigationManager NavigationManager
+@inject BlazingPizzaApiClient Client
+
+<div class="main">
+    <div class="checkout-cols">
+        <div class="checkout-order-details">
+            <h4>Review order</h4>
+            @foreach (var pizza in Order.Pizzas)
+            {
+                <p>
+                    <strong>
+                        @(pizza.Size)"
+                        @pizza.Special.Name
+                        (£@PricingService.GetFormattedTotalPrice(pizza))
+                    </strong>
+                </p>
+            }
+
+            <p>
+                <strong>
+                    Total price:
+                    £@PricingService.GetFormattedTotalPrice(Order)
+                </strong>
+            </p>
+        </div>
+    </div>
+
+    <button class="checkout-button btn btn-warning" @onclick="PlaceOrder" disabled=@isSubmitting>
+        Place order
+    </button>
+</div>
+
+@code {
+    OrderDto Order => OrderStateService.Order;
+    bool isSubmitting;
+
+    async Task PlaceOrder()
+    {
+        isSubmitting = true;
+        var orderId = await Client.SubmitOrderAsync(Order);
+
+        OrderStateService.ResetOrder();
+        NavigationManager.NavigateTo($"myorders/{orderId}");
+    }
+}

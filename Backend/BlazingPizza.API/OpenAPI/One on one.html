@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://localhost:8001/one-on-one/6a6a1925-91a6-4b52-9a38-08dbade56275 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<base href="/">--><base href=".">
+    <link href="./One on one_files/css" rel="stylesheet">
+    <link href="./One on one_files/MudBlazor.min.css" rel="stylesheet">
+    <link href="./One on one_files/site.css" rel="stylesheet">
+    <!--!--><!--!--><title>One on one</title><!--!-->
+</head>
+<body>
+    
+
+
+<!--!--><!--!--><!--!--><!--!--><!--!--><!--!--><!--!--><!--!--><!--!--><!--!--><style>
+::-webkit-scrollbar {width: 8px;height: 8px;z-index: 1;}
+::-webkit-scrollbar-track {background: transparent;}
+::-webkit-scrollbar-thumb {background: #c4c4c4;border-radius: 1px;}
+::-webkit-scrollbar-thumb:hover {background: #a6a6a6;}
+html, body * {scrollbar-color: #c4c4c4 transparent;scrollbar-width: thin;}
+</style>
+<!--!--><style>
+    .mud-chart-serie:hover {
+        filter: url(#lighten);
+    }
+</style>
+
+<!--!--><style>
+:root{
+--mud-palette-black: #272c34ff;
+--mud-palette-white: #ffffffff;
+--mud-palette-primary: #594ae2ff;
+--mud-palette-primary-rgb: 89,74,226;
+--mud-palette-primary-text: #ffffffff;
+--mud-palette-primary-darken: rgb(62,44,221);
+--mud-palette-primary-lighten: rgb(118,106,231);
+--mud-palette-primary-hover: rgba(89,74,226,0.058823529411764705);
+--mud-palette-secondary: #ff4081ff;
+--mud-palette-secondary-rgb: 255,64,129;
+--mud-palette-secondary-text: #ffffffff;
+--mud-palette-secondary-darken: rgb(255,31,105);
+--mud-palette-secondary-lighten: rgb(255,102,153);
+--mud-palette-secondary-hover: rgba(255,64,129,0.058823529411764705);
+--mud-palette-tertiary: #1ec8a5ff;
+--mud-palette-tertiary-rgb: 30,200,165;
+--mud-palette-tertiary-text: #ffffffff;
+--mud-palette-tertiary-darken: rgb(25,169,140);
+--mud-palette-tertiary-lighten: rgb(42,223,187);
+--mud-palette-tertiary-hover: rgba(30,200,165,0.058823529411764705);
+--mud-palette-info: #2196f3ff;
+--mud-palette-info-rgb: 33,150,243;
+--mud-palette-info-text: #ffffffff;
+--mud-palette-info-darken: rgb(12,128,223);
+--mud-palette-info-lighten: rgb(71,167,245);
+--mud-palette-info-hover: rgba(33,150,243,0.058823529411764705);
+--mud-palette-success: #00c853ff;
+--mud-palette-success-rgb: 0,200,83;
+--mud-palette-success-text: #ffffffff;
+--mud-palette-success-darken: rgb(0,163,68);
+--mud-palette-success-lighten: rgb(0,235,98);
+--mud-palette-success-hover: rgba(0,200,83,0.058823529411764705);
+--mud-palette-warning: #ff9800ff;
+--mud-palette-warning-rgb: 255,152,0;
+--mud-palette-warning-text: #ffffffff;
+--mud-palette-warning-darken: rgb(214,129,0);
+--mud-palette-warning-lighten: rgb(255,167,36);
+--mud-palette-warning-hover: rgba(255,152,0,0.058823529411764705);
+--mud-palette-error: #f44336ff;
+--mud-palette-error-rgb: 244,67,54;
+--mud-palette-error-text: #ffffffff;
+--mud-palette-error-darken: rgb(242,28,13);
+--mud-palette-error-lighten: rgb(246,96,85);
+--mud-palette-error-hover: rgba(244,67,54,0.058823529411764705);
+--mud-palette-dark: #424242ff;
+--mud-palette-dark-rgb: 66,66,66;
+--mud-palette-dark-text: #ffffffff;
+--mud-palette-dark-darken: rgb(46,46,46);
+--mud-palette-dark-lighten: rgb(87,87,87);
+--mud-palette-dark-hover: rgba(66,66,66,0.058823529411764705);
+--mud-palette-text-primary: #424242ff;
+--mud-palette-text-secondary: #00000089;
+--mud-palette-text-disabled: #00000060;
+--mud-palette-action-default: #00000089;
+--mud-palette-action-default-hover: rgba(0,0,0,0.058823529411764705);
+--mud-palette-action-disabled: #00000042;
+--mud-palette-action-disabled-background: #0000001e;
+--mud-palette-surface: #ffffffff;
+--mud-palette-background: #ffffffff;
+--mud-palette-background-grey: #f5f5f5ff;
+--mud-palette-drawer-background: #ffffffff;
+--mud-palette-drawer-text: #424242ff;
+--mud-palette-drawer-icon: #616161ff;
+--mud-palette-appbar-background: #594ae2ff;
+--mud-palette-appbar-text: #ffffffff;
+--mud-palette-lines-default: #0000001e;
+--mud-palette-lines-inputs: #bdbdbdff;
+--mud-palette-table-lines: #e0e0e0ff;
+--mud-palette-table-striped: #00000005;
+--mud-palette-table-hover: #0000000a;
+--mud-palette-divider: #e0e0e0ff;
+--mud-palette-divider-light: #000000cc;
+--mud-palette-grey-default: #9E9E9E;
+--mud-palette-grey-light: #BDBDBD;
+--mud-palette-grey-lighter: #E0E0E0;
+--mud-palette-grey-dark: #757575;
+--mud-palette-grey-darker: #616161;
+--mud-palette-overlay-dark: rgba(33,33,33,0.4980392156862745);
+--mud-palette-overlay-light: rgba(255,255,255,0.4980392156862745);
+--mud-elevation-0: none;
+--mud-elevation-1: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+--mud-elevation-2: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+--mud-elevation-3: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+--mud-elevation-4: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+--mud-elevation-5: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+--mud-elevation-6: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+--mud-elevation-7: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+--mud-elevation-8: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+--mud-elevation-9: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+--mud-elevation-10: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+--mud-elevation-11: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+--mud-elevation-12: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+--mud-elevation-13: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+--mud-elevation-14: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+--mud-elevation-15: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+--mud-elevation-16: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+--mud-elevation-17: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+--mud-elevation-18: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+--mud-elevation-19: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+--mud-elevation-20: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+--mud-elevation-21: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+--mud-elevation-22: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+--mud-elevation-23: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+--mud-elevation-24: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+--mud-elevation-25: 0 5px 5px -3px rgba(0,0,0,.06), 0 8px 10px 1px rgba(0,0,0,.042), 0 3px 14px 2px rgba(0,0,0,.036);
+--mud-default-borderradius: 4px;
+--mud-drawer-width-left: 240px;
+--mud-drawer-width-right: 240px;
+--mud-drawer-width-mini-left: 56px;
+--mud-drawer-width-mini-right: 56px;
+--mud-appbar-height: 64px;
+--mud-typography-default-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-default-size: .875rem;
+--mud-typography-default-weight: 400;
+--mud-typography-default-lineheight: 1.43;
+--mud-typography-default-letterspacing: .01071em;
+--mud-typography-default-text-transform: none;
+--mud-typography-h1-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-h1-size: 6rem;
+--mud-typography-h1-weight: 300;
+--mud-typography-h1-lineheight: 1.167;
+--mud-typography-h1-letterspacing: -.01562em;
+--mud-typography-h1-text-transform: none;
+--mud-typography-h2-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-h2-size: 3.75rem;
+--mud-typography-h2-weight: 300;
+--mud-typography-h2-lineheight: 1.2;
+--mud-typography-h2-letterspacing: -.00833em;
+--mud-typography-h2-text-transform: none;
+--mud-typography-h3-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-h3-size: 3rem;
+--mud-typography-h3-weight: 400;
+--mud-typography-h3-lineheight: 1.167;
+--mud-typography-h3-letterspacing: 0;
+--mud-typography-h3-text-transform: none;
+--mud-typography-h4-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-h4-size: 2.125rem;
+--mud-typography-h4-weight: 400;
+--mud-typography-h4-lineheight: 1.235;
+--mud-typography-h4-letterspacing: .00735em;
+--mud-typography-h4-text-transform: none;
+--mud-typography-h5-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-h5-size: 1.5rem;
+--mud-typography-h5-weight: 400;
+--mud-typography-h5-lineheight: 1.334;
+--mud-typography-h5-letterspacing: 0;
+--mud-typography-h5-text-transform: none;
+--mud-typography-h6-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-h6-size: 1.25rem;
+--mud-typography-h6-weight: 500;
+--mud-typography-h6-lineheight: 1.6;
+--mud-typography-h6-letterspacing: .0075em;
+--mud-typography-h6-text-transform: none;
+--mud-typography-subtitle1-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-subtitle1-size: 1rem;
+--mud-typography-subtitle1-weight: 400;
+--mud-typography-subtitle1-lineheight: 1.75;
+--mud-typography-subtitle1-letterspacing: .00938em;
+--mud-typography-subtitle1-text-transform: none;
+--mud-typography-subtitle2-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-subtitle2-size: .875rem;
+--mud-typography-subtitle2-weight: 500;
+--mud-typography-subtitle2-lineheight: 1.57;
+--mud-typography-subtitle2-letterspacing: .00714em;
+--mud-typography-subtitle2-text-transform: none;
+--mud-typography-body1-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-body1-size: 1rem;
+--mud-typography-body1-weight: 400;
+--mud-typography-body1-lineheight: 1.5;
+--mud-typography-body1-letterspacing: .00938em;
+--mud-typography-body1-text-transform: none;
+--mud-typography-body2-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-body2-size: .875rem;
+--mud-typography-body2-weight: 400;
+--mud-typography-body2-lineheight: 1.43;
+--mud-typography-body2-letterspacing: .01071em;
+--mud-typography-body2-text-transform: none;
+--mud-typography-button-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-button-size: .875rem;
+--mud-typography-button-weight: 500;
+--mud-typography-button-lineheight: 1.75;
+--mud-typography-button-letterspacing: .02857em;
+--mud-typography-button-text-transform: uppercase;
+--mud-typography-caption-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-caption-size: .75rem;
+--mud-typography-caption-weight: 400;
+--mud-typography-caption-lineheight: 1.66;
+--mud-typography-caption-letterspacing: .03333em;
+--mud-typography-caption-text-transform: none;
+--mud-typography-overline-family: 'Roboto','Helvetica','Arial','sans-serif';
+--mud-typography-overline-size: .75rem;
+--mud-typography-overline-weight: 400;
+--mud-typography-overline-lineheight: 2.66;
+--mud-typography-overline-letterspacing: .08333em;
+--mud-typography-overline-text-transform: none;
+--mud-zindex-drawer: 1100;
+--mud-zindex-appbar: 1300;
+--mud-zindex-dialog: 1400;
+--mud-zindex-popover: 1200;
+--mud-zindex-snackbar: 1500;
+--mud-zindex-tooltip: 1600;
+}
+</style>
+<!--!-->
+
+
+<!--!--><div class="mud-popover-provider"><!--!--><div id="popovercontent-b06a014d-9f50-4906-9c47-33c5eadc2325" data-ticks="0" class="mud-popover mud-popover-fixed mud-popover-top-left mud-popover-anchor-top-left mud-popover-overflow-flip-onopen" style="transition-duration: 251ms; transition-delay: 0ms; z-index: calc(var(--mud-zindex-popover) + 3); left: 284px; top: 230.038px;"></div><!--!--><div id="popovercontent-98dd0165-17b9-4472-b6da-270a30ba48a1" data-ticks="0" class="mud-popover mud-popover-fixed mud-popover-top-left mud-popover-anchor-top-left mud-popover-overflow-flip-onopen" style="transition-duration:251ms;transition-delay:0ms;"></div><!--!--><div id="popovercontent-38a21879-96fa-4ab3-984f-1596cb771dcd" data-ticks="0" class="mud-popover mud-popover-fixed mud-popover-top-left mud-popover-anchor-top-left mud-popover-overflow-flip-onopen" style="transition-duration:251ms;transition-delay:0ms;"></div><!--!--><div id="popovercontent-98d81fd6-28be-437b-a50c-d2bc2567bfac" data-ticks="0" class="mud-popover mud-popover-fixed mud-popover-top-left mud-popover-anchor-top-left mud-popover-overflow-flip-onopen" style="transition-duration:251ms;transition-delay:0ms;"></div><!--!--><div id="popovercontent-ac91d0b6-0070-4342-9701-0728688fca79" data-ticks="0" class="mud-popover mud-popover-fixed mud-popover-top-left mud-popover-anchor-top-left mud-popover-overflow-flip-onopen" style="transition-duration:251ms;transition-delay:0ms;"></div></div><!--!-->
+<!--!--><!--!--><!--!--><!--!-->
+<!--!--><div id="mud-snackbar-container" class="mud-snackbar-location-top-right"></div><!--!-->
+
+<!--!--><div class="mud-layout mud-drawer-open-responsive-md-left mud-drawer-left-clipped-never" style=""><!--!--><!--!--><header class="mud-appbar mud-appbar-fixed-top mud-elevation-0"><!--!--><div class="mud-toolbar mud-toolbar-gutters mud-toolbar-appbar"><!--!--><!--!-->
+        <!--!--><!--!--><div class="flex-grow-1"></div><!--!-->
+        <!--!--><!--!--><span>Hello, robert.van.diest@devoteam.com!</span><!--!-->
+        <form method="post" action="https://localhost:8001/Identity/Account/LogOut"><!--!--><!--!--><button type="submit" title="Log out" class="mud-button-root mud-icon-button mud-inherit-text hover:mud-inherit-hover mud-ripple mud-ripple-icon mud-icon-button-edge-end" _bl_5b0bbc31-7eaa-4b40-b48b-e3cd3a77b8e6=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"></path></svg></span></button></form></div></header><!--!-->
+    <!--!--><aside class="mud-drawer mud-drawer-fixed mud-drawer-pos-left mud-drawer--open mud-drawer--initial mud-drawer-md mud-drawer-clipped-never mud-elevation-1 mud-drawer-responsive" style=""><div class="mud-drawer-content" _bl_47ed9abb-48ed-4811-b72f-2036080a51ed=""><!--!--><!--!--><div class="mud-drawer-header"><!--!--><h6 class="mud-typography mud-typography-h6">HRFM</h6></div><!--!-->
+        <!--!--><!--!--><div class="mud-navmenu mud-navmenu-default mud-navmenu-margin-none"><!--!--><div class="mud-nav-item mud-ripple"><!--!--><a href="https://localhost:8001/" rel="" class="mud-nav-link"><!--!--><svg class="mud-icon-root mud-icon-default mud-svg-icon mud-icon-size-medium mud-nav-link-icon mud-nav-link-icon-default" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg><div class="mud-nav-link-text">Home</div></a></div><!--!-->
+    <!--!--><!--!--><div class="mud-nav-item mud-ripple"><!--!--><a href="https://localhost:8001/admin/users" rel="" class="mud-nav-link"><!--!--><svg class="mud-icon-root mud-icon-default mud-svg-icon mud-icon-size-medium mud-nav-link-icon mud-nav-link-icon-default" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><g><path d="M0,0h24v24H0V0z" fill="none"></path></g><g><g><circle cx="10" cy="8" r="4"></circle><path d="M10.67,13.02C10.45,13.01,10.23,13,10,13c-2.42,0-4.68,0.67-6.61,1.82C2.51,15.34,2,16.32,2,17.35V20h9.26 C10.47,18.87,10,17.49,10,16C10,14.93,10.25,13.93,10.67,13.02z"></path><path d="M20.75,16c0-0.22-0.03-0.42-0.06-0.63l1.14-1.01l-1-1.73l-1.45,0.49c-0.32-0.27-0.68-0.48-1.08-0.63L18,11h-2l-0.3,1.49 c-0.4,0.15-0.76,0.36-1.08,0.63l-1.45-0.49l-1,1.73l1.14,1.01c-0.03,0.21-0.06,0.41-0.06,0.63s0.03,0.42,0.06,0.63l-1.14,1.01 l1,1.73l1.45-0.49c0.32,0.27,0.68,0.48,1.08,0.63L16,21h2l0.3-1.49c0.4-0.15,0.76-0.36,1.08-0.63l1.45,0.49l1-1.73l-1.14-1.01 C20.72,16.42,20.75,16.22,20.75,16z M17,18c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S18.1,18,17,18z"></path></g></g></svg><div class="mud-nav-link-text">Users</div></a></div><!--!-->
+    <!--!--><!--!--><div class="mud-nav-item mud-ripple"><!--!--><a href="https://localhost:8001/consultantoverview" rel="" class="mud-nav-link"><!--!--><svg class="mud-icon-root mud-icon-default mud-svg-icon mud-icon-size-medium mud-nav-link-icon mud-nav-link-icon-default" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path></svg><div class="mud-nav-link-text">Consultant overview</div></a></div><!--!-->
+    <!--!--><!--!--><div class="mud-nav-item mud-ripple"><!--!--><a href="https://localhost:8001/fetchdata" rel="" class="mud-nav-link"><!--!--><svg class="mud-icon-root mud-icon-default mud-svg-icon mud-icon-size-medium mud-nav-link-icon mud-nav-link-icon-default" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path></svg><div class="mud-nav-link-text">Fetch data</div></a></div></div></div></aside><!--!-->
+<!--!--><!--!-->
+    <!--!--><div class="mud-main-content"><!--!--><div class="mud-container mud-container-maxwidth-lg pt-4"><!--!--><!--!--><!--!--><!--!--><!--!--><div class="mud-grid mud-grid-spacing-xs-1 justify-start"><!--!--><div class="mud-grid-item mud-grid-item-xs-4"><!--!--><div class="mud-paper mud-elevation-1 d-flex align-center justify-center mud-width-full py-8" style=""><span><!--!--><b>Employee: </b> Dominik Lichota</span></div></div><!--!-->
+        <!--!--><div class="mud-grid-item mud-grid-item-xs-4"><!--!--><div class="mud-paper mud-elevation-1 d-flex align-center justify-center mud-width-full py-8" style=""><span><!--!--><b>Field: </b> Cloud Engineer</span></div></div><!--!-->
+        <!--!--><div class="mud-grid-item mud-grid-item-xs-4"><!--!--><div class="mud-paper mud-elevation-1 d-flex align-center justify-center mud-width-full py-8" style=""><span><!--!--><b>Manager: </b> robert.van.diest@devoteam.com</span></div></div></div><!--!--><!--!--><div class="mud-grid mud-grid-spacing-xs-3 justify-start"><!--!--><div class="mud-grid-item mud-grid-item-xs-12"><!--!--><form><!--!--><!--!--><!--!-->
+
+                <!--!--><!--!--><div class="mud-paper mud-elevation-1 mud-card" style=""><!--!--><div class="mud-card-content"><!--!--><h2 class="mt-2 mb-2">Introduction</h2>
+                        <!--!--><!--!--><div class="mud-picker mud-picker-inline mud-picker-input-button" id="pickerb633b2ce"><!--!--><!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-adorned-end mud-input-underline"><input class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" type="text" readonly="" inputmode="text" maxlength="524288" aria-invalid="false" _bl_6657b9ea-1a70-4945-881d-68afe3af8176=""><div class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" style="display:none" tabindex="-1" _bl_6e265b17-7d36-4571-afa2-4a49355a578c=""></div><!--!--><div class="mud-input-adornment mud-input-adornment-end"><!--!--><!--!--><button aria-label="Open Date Picker" tabindex="-1" type="button" class="mud-button-root mud-icon-button mud-ripple mud-ripple-icon mud-icon-button-edge-end" _bl_3a93b313-0440-4b70-9d40-a0003af7f42b=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path></svg></span></button></div></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-ee997061-f181-4b9b-b956-7ec23a2b2123">Meeting date</label></div></div><!--!--><div id="popover-b06a014d-9f50-4906-9c47-33c5eadc2325" class="mud-popover-cascading-value"></div></div><!--!--><!--!-->
+                        <!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-underline"><textarea class="mud-input-slot mud-input-root mud-input-root-text" rows="5" type="text" inputmode="text" maxlength="524288" aria-invalid="false" _bl_5c90fbbb-487c-45e8-a32a-f70a9471f8ce=""></textarea></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-7d728f43-b7f8-4a41-90b2-b5f4e21bf797">Agenda items</label></div></div><!--!-->
+
+                        <!--!--><h2 class="mt-6 mb-2">CV</h2>
+                        <!--!--><!--!--><div class="mud-picker mud-picker-inline mud-picker-input-button" id="picker085edc71"><!--!--><!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-adorned-end mud-input-underline"><input class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" type="text" readonly="" inputmode="text" maxlength="524288" aria-invalid="false" _bl_0150f7d1-a550-4eb7-921a-b00fd6aea439=""><div class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" style="display:none" tabindex="-1" _bl_6659fff7-5daa-4ccb-b054-c8704b1e8df7=""></div><!--!--><div class="mud-input-adornment mud-input-adornment-end"><!--!--><!--!--><button aria-label="Open Date Picker" tabindex="-1" type="button" class="mud-button-root mud-icon-button mud-ripple mud-ripple-icon mud-icon-button-edge-end" _bl_d4415349-2f2d-4a6b-8928-e68ef5d9b96a=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path></svg></span></button></div></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-35cadde9-6d93-4b8d-8109-565e58c5f3cd">Last CV Update</label></div></div><!--!--><div id="popover-98dd0165-17b9-4472-b6da-270a30ba48a1" class="mud-popover-cascading-value"></div></div><!--!--><!--!-->
+                        <!--!--><!--!--><div class="mud-picker mud-picker-inline mud-picker-input-button" id="picker756e7be6"><!--!--><!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-adorned-end mud-input-underline"><input class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" type="text" readonly="" inputmode="text" maxlength="524288" aria-invalid="false" _bl_fe3e946d-49f0-4539-a250-02c114bcb999=""><div class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" style="display:none" tabindex="-1" _bl_6cd5b5d1-7890-4ba2-a300-463457592e68=""></div><!--!--><div class="mud-input-adornment mud-input-adornment-end"><!--!--><!--!--><button aria-label="Open Date Picker" tabindex="-1" type="button" class="mud-button-root mud-icon-button mud-ripple mud-ripple-icon mud-icon-button-edge-end" _bl_c6119f06-bbba-4d5a-9754-78e82d907c0b=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path></svg></span></button></div></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-fefea656-3974-4f71-bfe8-43e6823ec3ec">Last One-Pager Update</label></div></div><!--!--><div id="popover-38a21879-96fa-4ab3-984f-1596cb771dcd" class="mud-popover-cascading-value"></div></div><!--!--><!--!-->
+
+                        <!--!--><h2 class="mt-6 mb-2">Current Assignment</h2>
+                        <div class="d-flex flex-grow-1 gap-4"><!--!--><div class="mud-paper mud-elevation-0 flex-initial d-flex" style="width:40%;"><!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control d-inline-flex"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-underline"><input class="mud-input-slot mud-input-root mud-input-root-text" type="text" inputmode="text" maxlength="524288" aria-invalid="false" _bl_324f2f8e-ebc1-45b9-8dd5-246fe15394b0=""><div class="mud-input-slot mud-input-root mud-input-root-text" style="display:none" tabindex="-1" _bl_ed3ff858-ff63-444b-a117-2db5a4095ca6=""></div></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-3aafe50f-f819-474b-8717-2f723e95393b">Current Assignment</label></div></div></div><!--!-->
+                            <!--!--><div class="mud-paper mud-elevation-0 flex-initial d-flex" style="width:25%;"><!--!--><!--!--><div class="mud-input-control mud-input-control-boolean-input d-inline-flex"><div class="mud-input-control-input-container"><label class="mud-checkbox" id="checkbox2836473d"><span tabindex="0" class="mud-button-root mud-icon-button mud-default-text hover:mud-default-hover mud-ripple mud-ripple-checkbox"><input tabindex="-1" type="checkbox" class="mud-checkbox-input"><!--!-->
+                <!--!--><svg class="mud-icon-root mud-svg-icon mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg></span><!--!--><p class="mud-typography mud-typography-body1">Happy with assignment</p></label></div></div></div></div><!--!-->
+
+                        <!--!--><h2 class="mt-6 mb-2">General</h2>
+                        <!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-underline"><textarea class="mud-input-slot mud-input-root mud-input-root-text" rows="5" type="text" inputmode="text" maxlength="524288" aria-invalid="false" _bl_08e2ee25-9b8d-4b6d-9b5d-965f3b9fdf83=""></textarea></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-2154ed29-ac10-486c-aecd-889937422cf0">General Notes</label></div></div><!--!-->
+
+                        <!--!--><h2 class="mt-6 mb-2">Personal Development Plan</h2>
+                        <!--!--><!--!--><div class="mud-picker mud-picker-inline mud-picker-input-button" id="picker5c606282"><!--!--><!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-adorned-end mud-input-underline"><input class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" type="text" readonly="" inputmode="text" maxlength="524288" aria-invalid="false" _bl_c62fd9da-c6a7-447a-8bc3-95b0a514c4e7=""><div class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" style="display:none" tabindex="-1" _bl_238627b9-f4a9-41f3-9b62-9c4091230b15=""></div><!--!--><div class="mud-input-adornment mud-input-adornment-end"><!--!--><!--!--><button aria-label="Open Date Picker" tabindex="-1" type="button" class="mud-button-root mud-icon-button mud-ripple mud-ripple-icon mud-icon-button-edge-end" _bl_aab923bb-fd0b-443c-b11b-31b12def9c54=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path></svg></span></button></div></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-1f46f50a-9f63-48bd-a763-566ef55fc933">Last PDP Date</label></div></div><!--!--><div id="popover-98d81fd6-28be-437b-a50c-d2bc2567bfac" class="mud-popover-cascading-value"></div></div><!--!--><!--!-->
+                        <!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-underline"><textarea class="mud-input-slot mud-input-root mud-input-root-text" rows="5" type="text" inputmode="text" maxlength="524288" aria-invalid="false" _bl_643e1518-c5ad-4944-b75b-92e557d62ab4=""></textarea></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-076ded47-16b3-4be8-bc2e-368c1808a36e">PersonalDevelopmentPlan</label></div></div><!--!-->
+
+                        <!--!--><h2 class="mt-6 mb-2">Aaaahh</h2>
+                        <!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-underline"><textarea class="mud-input-slot mud-input-root mud-input-root-text" rows="5" type="text" inputmode="text" maxlength="524288" aria-invalid="false" _bl_1daf3814-14d4-4a3f-9ae5-5b56b18bb5f1=""></textarea></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-4754bf00-ac13-4fab-910a-950018ef3f06">Agreed actions</label></div></div><!--!-->
+                        <!--!--><!--!--><div class="mud-picker mud-picker-inline mud-picker-input-button" id="picker5c33982a"><!--!--><!--!--><!--!--><!--!--><div class="mud-input-control mud-input-input-control"><div class="mud-input-control-input-container"><!--!--><!--!--><div class="mud-input mud-input-text mud-input-adorned-end mud-input-underline"><input class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" type="text" readonly="" inputmode="text" maxlength="524288" aria-invalid="false" _bl_54202960-c038-4739-ad76-428e3c7a278f=""><div class="mud-input-slot mud-input-root mud-input-root-text mud-input-root-adorned-end" style="display:none" tabindex="-1" _bl_fd941326-eba6-43c0-9331-ff0b4bb04a23=""></div><!--!--><div class="mud-input-adornment mud-input-adornment-end"><!--!--><!--!--><button aria-label="Open Date Picker" tabindex="-1" type="button" class="mud-button-root mud-icon-button mud-ripple mud-ripple-icon mud-icon-button-edge-end" _bl_2d4c440c-c1d8-432a-a36c-1e7a4c87acf5=""><span class="mud-icon-button-label"><!--!--><svg class="mud-icon-root mud-svg-icon mud-icon-size-medium" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><!--!--><path d="M0 0h24v24H0z" fill="none"></path><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path></svg></span></button></div></div><!--!--><label class="mud-input-label mud-input-label-animated mud-input-label-text mud-input-label-inputcontrol" for="mudinput-a367ce6b-ae40-45d9-8108-49d8228788f4">Next meeting date</label></div></div><!--!--><div id="popover-ac91d0b6-0070-4342-9701-0728688fca79" class="mud-popover-cascading-value"></div></div><!--!--></div><!--!-->
+                    <!--!--><div class="mud-card-actions"><!--!--><!--!--><button type="submit" class="mud-button-root mud-button mud-button-filled mud-button-filled-primary mud-button-filled-size-medium mud-ripple ml-auto" _bl_30bcab48-1ba1-4c9e-aaca-9d0fe628cd34=""><span class="mud-button-label"><!--!-->
+                            Register
+                        </span></button></div></div></form></div></div></div></div></div><!--!-->
+            <!--!-->
+
+
+    <div id="blazor-error-ui">
+        
+        
+            An unhandled exception has occurred. See browser dev tools for details.
+        
+        <a href="https://localhost:8001/" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="./One on one_files/blazor.server.js.download"></script>
+    <script src="./One on one_files/MudBlazor.min.js.download"></script>
+<script src="./One on one_files/aspnetcore-browser-refresh.js.download"></script>
+
+</body></html>

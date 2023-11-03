@@ -1,0 +1,36 @@
+﻿@using BlazingPizza.API;
+@using BlazingPizza.Portal.Services;
+
+@inject PricingService PricingService
+
+<div class="dialog-container">
+    <div class="dialog">
+        <div class="dialog-title">
+            <h2>@Pizza.Special.Name</h2>
+            @Pizza.Special.Description
+        </div>
+        <form class="dialog-body">
+            <div>
+                <label>Size:</label>
+                <input type="range" min="9" max="17" step="1" @bind=Pizza.Size @bind:event="oninput" />
+                <span class="size-label">
+                    @(Pizza.Size)" (£@(PricingService.GetFormattedTotalPrice(Pizza)))
+                </span>
+            </div>
+        </form>
+
+        <div class="dialog-buttons">
+            <button @onclick="OnCancel" class="btn btn-secondary mr-auto">Cancel</button>
+            <span class="mr-center">
+                Price: <span class="price">@(PricingService.GetFormattedTotalPrice(Pizza))</span>
+            </span>
+            <button @onclick="OnConfirm" class="btn btn-success ml-auto">Order ></button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public PizzaDto Pizza { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+    [Parameter] public EventCallback OnConfirm { get; set; }
+}

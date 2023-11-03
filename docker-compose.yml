@@ -1,0 +1,16 @@
+version: '3'
+services:
+  portal:
+    build:
+      dockerfile: './Frontend/BlazingPizza.Portal/Dockerfile'
+    environment:
+      - PORT=80
+      - BACKEND_URL=http://host.docker.internal:5001
+    ports:
+      - "5000:80"
+  api:
+    build:
+      dockerfile: './Backend/BlazingPizza.API/Dockerfile'
+    ports:
+      - "5001:80"      
+    

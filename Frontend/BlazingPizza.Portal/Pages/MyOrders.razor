@@ -1,0 +1,57 @@
+﻿@page "/myorders"
+
+@using BlazingPizza.API;
+@using BlazingPizza.Portal.Services;
+
+@inject BlazingPizzaApiClient Client
+@inject PricingService PricingService
+@inject NavigationManager NavigationManager
+
+<div class="main">
+    @if (ordersWithStatus == null)
+    {
+        <text>Loading...</text>
+    }
+    else if (!ordersWithStatus.Any())
+    {
+        <h2>No orders placed</h2>
+        <a class="btn btn-success" href="">Order some pizza</a>
+    }
+    else
+    {
+        <div class="list-group orders-list">
+            @foreach (var item in ordersWithStatus)
+            {
+                <div class="list-group-item">
+                    <div class="col">
+                        <h5>@item.CreatedTime.ToLocalTime().DateTime.ToLongDateString()</h5>
+                        Items:
+                        <strong>@item.NumberOfItems</strong>;
+                        Total price:
+                        <strong>£@item.TotalPrice</strong>
+                    </div>
+                    <div class="col">
+                        Status: <strong>@item.OrderStatus</strong>
+                    </div>
+                    @if (@item.OrderStatus != "Delivered")
+                    {
+                        <div class="col flex-grow-0">
+                            <a href="myorders/@item.OrderId" class="btn btn-success">
+                                Track &gt;
+                            </a>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    ICollection<OrderSummaryDto> ordersWithStatus = new List<OrderSummaryDto>();
+
+    protected override async Task OnParametersSetAsync()
+    {
+        ordersWithStatus = await Client.GetOrderSummariesAsync();
+    }
+}

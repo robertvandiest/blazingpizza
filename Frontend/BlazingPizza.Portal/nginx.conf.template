@@ -1,0 +1,16 @@
+events {
+    worker_connections  1024;
+}
+
+http {
+    server {
+        listen ${PORT};
+        root /usr/share/nginx/html;
+        charset utf-8;
+        index index.html index.htm;        
+
+        location /api/ {
+            proxy_pass ${BACKEND_URL};
+        }
+    }
+}
